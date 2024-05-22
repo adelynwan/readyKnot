@@ -1,0 +1,245 @@
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 200px; /* Add some margin to create space for the footer */
+}
+
+header {
+    background: linear-gradient(to right, #0c65e3, #d5ac07);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    font-family: "Gluten", cursive;
+
+}
+
+header h1 a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 5rem;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+header :hover {
+    color: #333;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+nav ul li a {
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 5px 10px; /* Add padding for better visibility of hover effect */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+#weddingPic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.weddingIntro h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 4rem;
+    background-color: rgba(211, 211, 211, 0.7);
+    width: 100%;
+    font-style: italic;
+}
+
+#footer {
+    background: linear-gradient(to right, #0c65e3, #d5ac07);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: x-small;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+
+/* guest regis */
+
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #2a82e0;
+    border-radius: 4px;
+}
+
+#submitGuest {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #135af5, #d5ac07);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    
+}
+
+.attending {
+    background-color: lightgreen;
+}
+
+#guest-table {
+    border-collapse: separate;
+    border-spacing: 0px; /* Adjust the value to set the spacing between columns */
+}
+
+
+#guest-table td, #guest-table th {
+    border: 1px solid black; /* Add a solid black border to each table cell */
+}
+
+/* seating - tables */
+#tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: flex-end;
+    position: relative;
+    height: 80vh; /* Adjust as necessary */
+    width: 60%; /* Adjust as necessary */
+    margin-left: auto;
+    margin-right: 50px; /* Optional: Adjust for spacing from the right edge */
+    font-weight: bold;
+}
+
+.table {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: relative;
+    flex-wrap: wrap;
+    border-radius: 50%;
+}
+
+
+
+/*seating - names*/
+#guest-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 200px;
+    display: inline;
+    overflow-y: auto;
+
+}
+.guest-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #dca716;
+    border: 1px solid #ccc;
+    cursor:grab move;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+}
+.dragging {
+    opacity: 0.5;
+}
+
+
+/* Start Planning page design */
+
+.guideToStart h2 a {
+    text-decoration: none;
+    color: rgb(4, 130, 233);
+}
+
+.guideToStart h2 a:hover {
+    color: rgb(142, 175, 237);
+}
+
+#startIntro {
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+
+/* Event Form design */
+
+#weddingHeader {
+    font-size: 3rem;
+    text-align: center;
+    font-style: italic;
+}
+
+.weddingEventDetails {
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    padding-top: 30px;
+}
+
+#event-form  {
+    margin: 20px 0;
+    background: linear-gradient(to bottom, #fff, #f4f4f4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 1rem;
+    background: lightgoldenrodyellow;
+}
+
+button:hover {
+    background: lightskyblue;
+}
+
+

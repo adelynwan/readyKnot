@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ReadyKnot - Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    </head>
+
+<body>
+    <header>
+        <h1>You're invited !</h1>
+        <nav>
+            <ul>
+                <li><a href="guest.html">Guest Registration</a></li>
+                <li><a href="event-details.html">Event Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Please RSVP below with your details:</h2>
+
+        <form id="guest-form">
+            <label for="guest-name">Name:</label>
+            <input type="text" id="guest-name" name="guestName" required>
+
+            <label for="country-code">Country Code:</label>
+            <select id="country-code" name="countryCode">
+                <option value="+65">+65 (Singapore)</option>
+                <option value="+60">+60 (Malaysia)</option>
+                <option value="+66">+66 (Thailand)</option>
+                <option value="+81">+81 (Japan)</option>
+                <option value="+86">+86 (China)</option>
+            </select>
+
+            <label for="guest-phone">Phone Number:</label>
+            <input type="tel" id="guest-phone" name="guestPhone" required>
+
+            <label for="num-pax">Number of guests attending (including you):</label>
+            <select id="num-pax" name="numPax" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <label for="guest-diet">Dietary Requirements:</label>
+            <select id="guest-diet" name="guestDiet" required>
+                <option value="None">None</option>
+                <option value="Halal">Halal</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Vegan">Vegan</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 readyKnot</p>
+        <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+    </footer>
+    <script src="guest-display.js"></script>
+</body>
+</html>

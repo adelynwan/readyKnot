@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadyKnot - Create Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Create Event</h1>
+        <nav>
+            <ul>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="start.html">Start Planning Today!</a></li>
+                <li><a href="guest-details.html">Step 2: Track my Guest</a></li>
+                <li><a href="seating.html">Step 3: Allocate Seating Arrangement</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Create a New Event</h2>
+        <form id="event-form">
+            <label for="eventName">Name of Bride & Groom:</label>
+            <input type="text" id="event-name" name="eventName" required>
+
+            <label for="eventDate">Date:</label>
+            <input type="date" id="event-date" name="eventDate" required>
+
+            <label for="eventTime">Time:</label>
+            <input type="time" id="event-time" name="eventTime" required>
+
+            <label for="eventVenue">Event Venue:</label>
+            <textarea id="event-venue" name="eventVenue" rows="4" required></textarea>
+
+            <button type="submit">Create Event</button>
+        </form>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024 readyKnot</p>
+        <p>Disclaimer: This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+    </footer>
+    <script src="event-display.js"></script>
+</body>
+</html>
+
+
