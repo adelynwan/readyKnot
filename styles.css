@@ -142,7 +142,7 @@ input[type="text"], input[type="tel"] {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 50px;
-    justify-content: flex-end;
+    justify-content: flex-start;
     position: relative;
     height: 80vh; /* Adjust as necessary */
     width: 60%; /* Adjust as necessary */
@@ -267,7 +267,7 @@ button:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #b2e6c0 /* color of the handle */
+    background: #b2e6c0; /* color of the handle */
     border-radius: 50px; /* roundness of the handle */
 }
 
