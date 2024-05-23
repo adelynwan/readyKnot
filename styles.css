@@ -4,6 +4,11 @@ body {
     padding: 0;
 }
 
+header #shortintro {
+    font-family: "Corinthia", cursive;
+    font-size: 2rem;
+}
+
 main {
     position: relative;
     padding: 20px;
@@ -11,11 +16,11 @@ main {
 }
 
 header {
-    background: linear-gradient(to right, #b2e6c0, #94b9ff);
+    background: linear-gradient(to bottom, #d7bea8ff, rgb(246, 223, 203)); 
     color: black;
     padding: 1em 0;
     text-align: center;
-    font-family: "Gluten", cursive;
+    font-family: "Playfair Display", serif;
 
 }
 
@@ -72,14 +77,16 @@ nav ul li a {
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: lighter;
-    font-size: 3.5rem;
+    font-size: 4rem;
     background-color: rgba(211, 211, 211, 0.7);
     width: 100%;
-    font-style: italic;
+    font-family: "Corinthia", cursive;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 #footer {
-    background: linear-gradient(to right, #b2e6c0, #94b9ff);
+    background: linear-gradient(to bottom, #d7bea8ff, rgb(246, 223, 203));
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -258,7 +265,7 @@ button:hover {
 /* Track */
 ::-webkit-scrollbar-track {
     background-color: transparent;/* color of the track */
-    background: #94b9ff;
+    background: #744253ff;
 }
 
 ::-webkit-scrollbar-track-piece {
