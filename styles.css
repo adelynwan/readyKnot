@@ -121,7 +121,7 @@ input[type="text"], input[type="tel"] {
 }
 
 .attending {
-    background-color: lightgreen;
+    background-color: rgb(168, 212, 121);
 }
 
 /* seating - tables */
@@ -179,7 +179,7 @@ input[type="text"], input[type="tel"] {
 .guest-item {
     padding: 10px;
     margin: 5px 0;
-    background-color: #dca716;
+    background-color: #efebceff;
     border: 1px solid #ccc;
     cursor:grab move;
     color: black;
