@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     allTables.forEach(function(table) {
                         const numElements = table.querySelectorAll('.guest-item').length;
                         if (numElements >= 10) {
-                            table.style.backgroundColor = 'sage';
+                            table.style.backgroundColor = 'lightblue';
                         } else {
                             table.style.backgroundColor = ''; // Reset the background color if fewer than 10 elements
                         }
