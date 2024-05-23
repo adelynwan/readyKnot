@@ -246,4 +246,34 @@ button:hover {
     background: lightskyblue;
 }
 
+/* web scroller */
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* width of vertical scrollbar */
+    height: 12px; /* height of horizontal scrollbar */
+    background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;/* color of the track */
+    background: #94b9ff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: none; /*the track NOT covered by the handle.*/
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b2e6c0 /* color of the handle */
+    border-radius: 50px; /* roundness of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b2e6c0 /* color of the handle when hovered */
+}
+
 
