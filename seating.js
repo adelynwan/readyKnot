@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
         allTables.forEach(function(table) {
             const numElements = table.querySelectorAll('.guest-item').length;
             if (numElements >= perTable) {
-                table.style.backgroundColor = 'lightblue';
+                table.style.backgroundColor = 'rgba(144, 238, 144, 0.7)';
             } else {
                 table.style.backgroundColor = ''; // Reset the background color if fewer than perTable elements
             }
