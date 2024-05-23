@@ -4,11 +4,6 @@ body {
     padding: 0;
 }
 
-header #shortintro {
-    font-family: "Corinthia", cursive;
-    font-size: 2rem;
-}
-
 main {
     position: relative;
     padding: 20px;
@@ -27,7 +22,7 @@ header {
 header h1 a {
     text-decoration: none;
     color: black;
-    font-size: 5rem;
+    font-size: 6rem;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -40,7 +35,7 @@ header h1 {
 }
 
 header :hover {
-    color: blanchedalmond;
+    color: white;
 }
 
 
@@ -60,6 +55,7 @@ nav ul li a {
     text-decoration: none;
     padding: 5px 10px; /* Add padding for better visibility of hover effect */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    font-weight: bold;
 }
 
 /* index pic */
@@ -71,13 +67,13 @@ nav ul li a {
 }
 
 .weddingIntro h2 {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: lighter;
-    font-size: 4rem;
+    font-size: 5rem;
     background-color: rgba(211, 211, 211, 0.7);
     width: 100%;
     font-family: "Corinthia", cursive;
@@ -94,7 +90,7 @@ nav ul li a {
 }
 
 footer p {
-    color: blanchedalmond;
+    color: black;
     text-align: center;
 }
 
@@ -108,16 +104,15 @@ label {
 }
 
 input[type="text"], input[type="tel"] {
-    width: 100%;
+    width: 50%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 2px solid #2a82e0;
+    border: 2px solid #7d4f50ff;
     border-radius: 4px;
 }
 
 #submitGuest {
     padding: 10px 20px;
-    background: linear-gradient(to right, #135af5, #d5ac07);
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -172,7 +167,6 @@ input[type="text"], input[type="tel"] {
 }
 
 
-
 /*seating - names*/
 #guest-list {
     list-style: none;
@@ -204,16 +198,21 @@ input[type="text"], input[type="tel"] {
 
 .guideToStart h2 a {
     text-decoration: none;
-    color: rgb(4, 130, 233);
+    color: rgb(123, 67, 85);
 }
 
 .guideToStart h2 a:hover {
-    color: rgb(142, 175, 237);
+    color: #d7bea8ff;
+}
+
+.guideToStart #finally {
+    font-size: 2rem;
+    font-style: italic;
 }
 
 #startIntro {
     font-size: 2.5rem;
-    font-style: italic;
+   
 }
 
 
@@ -246,11 +245,14 @@ button {
     border-radius: 8px;
     margin-top: 30px;
     font-size: 1rem;
-    background: lightgoldenrodyellow;
+    background: #d1be9cff;
+    width: 30%;
+    font-weight: bold;
+    font-style: "Playfair Display", serif;
 }
 
 button:hover {
-    background: lightskyblue;
+    background: #f9eae1ff;
 }
 
 /* web scroller */
@@ -274,13 +276,13 @@ button:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #b2e6c0; /* color of the handle */
+    background: #b49286ff; /* color of the handle */
     border-radius: 50px; /* roundness of the handle */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #b2e6c0 /* color of the handle when hovered */
+    background: #d7bea8ff /* color of the handle when hovered */
 }
 
 

@@ -34,6 +34,6 @@ document.getElementById('event-form').addEventListener('submit', function(event)
     // Redirect to event-details.html after 2 seconds
     setTimeout(function() {
         window.open('event-details.html', '_blank');
-    }, 2000);
+    }, 1000);
 });
 
