@@ -11,8 +11,8 @@ main {
 }
 
 header {
-    background: linear-gradient(to right, #0c65e3, #d5ac07);
-    color: #fff;
+    background: linear-gradient(to right, #b2e6c0, #94b9ff);
+    color: black;
     padding: 1em 0;
     text-align: center;
     font-family: "Gluten", cursive;
@@ -21,7 +21,7 @@ header {
 
 header h1 a {
     text-decoration: none;
-    color: blanchedalmond;
+    color: black;
     font-size: 5rem;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -35,7 +35,7 @@ header h1 {
 }
 
 header :hover {
-    color: #333;
+    color: blanchedalmond;
 }
 
 
@@ -51,7 +51,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: blanchedalmond;
+    color: black;
     text-decoration: none;
     padding: 5px 10px; /* Add padding for better visibility of hover effect */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
@@ -79,7 +79,7 @@ nav ul li a {
 }
 
 #footer {
-    background: linear-gradient(to right, #0c65e3, #d5ac07);
+    background: linear-gradient(to right, #b2e6c0, #94b9ff);
     position: fixed;
     bottom: 0px;
     width: 100%;
@@ -87,7 +87,7 @@ nav ul li a {
 }
 
 footer p {
-    color: #fff;
+    color: blanchedalmond;
     text-align: center;
 }
 
@@ -124,6 +124,8 @@ input[type="text"], input[type="tel"] {
     background-color: lightgreen;
 }
 
+/* seating - tables */
+
 #guest-table {
     border-collapse: separate;
     border-spacing: 0px; /* Adjust the value to set the spacing between columns */
@@ -134,7 +136,7 @@ input[type="text"], input[type="tel"] {
     border: 1px solid black; /* Add a solid black border to each table cell */
 }
 
-/* seating - tables */
+
 #tables-container {
     display: flex;
     flex-wrap: wrap;
