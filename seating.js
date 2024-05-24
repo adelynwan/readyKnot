@@ -109,11 +109,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const allTables = document.querySelectorAll('.table');
         allTables.forEach(function(table) {
             const numElements = table.querySelectorAll('.guest-item').length;
-            if (numElements = perTable) {
+            if (numElements === perTable) {
                 table.style.backgroundColor = 'rgba(144, 238, 144, 0.7)';
             } else if (numElements > perTable ) {
                 table.style.backgroundColor ='rgba(255, 128, 128, 0.7)';
-            } else {
+            }
+            else {
                 table.style.backgroundColor = ''; // Reset the background color if fewer than perTable elements
             }
 
