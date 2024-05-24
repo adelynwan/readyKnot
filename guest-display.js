@@ -1,9 +1,9 @@
-// to display guest details
-
 document.addEventListener('DOMContentLoaded', function() {
+    // retrieves table body element with guest-table id and from local storage or puts up empty array if got no existing data
     const guestTableBody = document.querySelector('#guest-table tbody');
     const guests = JSON.parse(localStorage.getItem('guests')) || [];
 
+    // creates new table row for each guest and populates each row with guest info
     guests.forEach(guest => {
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -14,33 +14,28 @@ document.addEventListener('DOMContentLoaded', function() {
             <td>${guest.guestDiet}</td>
         `;
         
-        // Add event listener for click to change color
+        // Add event listener for click to change color for attending guest
         row.addEventListener('click', function() {
             row.classList.toggle('attending');
         });
 
-        // Add event listener for double click to undo color
+        // Add event listener for double click to undo color if click wrong or not attending
         row.addEventListener('dblclick', function() {
             row.classList.remove('attending');
         });
 
+        // append each tr to tb
         guestTableBody.appendChild(row);
     });
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const urlParams = new URLSearchParams(window.location.search);
-
-    document.getElementById('display-guest-name').textContent = urlParams.get('guestName');
-    document.getElementById('display-country-code').textContent = urlParams.get('countryCode');
-    document.getElementById('display-guest-phone').textContent = urlParams.get('guestPhone');
-    document.getElementById('display-num-pax').textContent = urlParams.get('numPax');
-    document.getElementById('display-guest-diet').textConent = urlParams.get('guestDiet')
-});
+// runs when user clicks submit on guest form
 
 document.getElementById('guest-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // prevents page from reloading
+
+    // retrieve values entered into form fields
 
     const guestName = document.getElementById('guest-name').value;
     const countryCode = document.getElementById('country-code').value;

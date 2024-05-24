@@ -1,3 +1,4 @@
+// make sure DOM content is fully loaded before executing the function
 document.addEventListener('DOMContentLoaded', function() {
     const guestList = document.getElementById('guest-list');
     const guests = JSON.parse(localStorage.getItem('guests')) || [];
@@ -19,16 +20,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listeners for making guest items draggable
     const guestItems = document.querySelectorAll('.guest-item');
+    // add event listeners to each guest item to make them draggable
     guestItems.forEach(function(guestItem) {
         guestItem.setAttribute('draggable', true);
 
+        // event triggered when guest item is dragged
         guestItem.addEventListener('dragstart', function(event) {
+
+            // store the original parent element and position of dragged guest item
             originalParent = event.target.parentNode;
             originalPosition = { x: event.clientX, y: event.clientY };
+            // add dragging class to the dragged guest item
             event.target.classList.add('dragging');
         });
 
+        // add dragend event listener to each guest item
         guestItem.addEventListener('dragend', function(event) {
+            // remove dragging class when dragging ends
             event.target.classList.remove('dragging');
         });
     });
@@ -50,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             draggedElement.classList.remove('dragging'); // Remove dragging class after dropping
         // change table colour based on number of guest 
-        const perTable = parseInt(perTableInput.value, 10);
+        const perTable = parseInt(perTableInput.value);
         updateTableColors(perTable);
         }
     });
@@ -58,20 +66,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create tables dynamically
     createTablesButton.addEventListener('click', function() {
         const numTables = document.getElementById('num-tables').value;
-        const perTable = parseInt(perTableInput.value, 10);
+        const perTable = parseInt(perTableInput.value);
         tablesContainer.innerHTML = ''; // Clear previous tables
 
+    //  starts loop that wil run numtables over each table that needs to be created
         for (let i = 0; i < numTables; i++) {
             const table = document.createElement('div');
+            // assigning css class 'table' to this element
             table.classList.add('table');
             table.textContent = `Table ${i + 1}`;
+            // append to tables container
             tablesContainer.appendChild(table);
 
-            // Allow dropping on the tables
+            // Allow dragging onto the tables
             table.addEventListener('dragover', function(event) {
                 event.preventDefault(); // Allow drop
             });
 
+            // adds drop function on each table
             table.addEventListener('drop', function(event) {
                 event.preventDefault();
                 const draggedElement = document.querySelector('.dragging');
@@ -89,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // listen for changes to the per-table input
     perTableInput.addEventListener('input', function() {
-        const perTable = parseInt(this.value, 10);
+        const perTable = parseInt(this.value);
         updateTableColors(perTable);
     });
 
@@ -97,11 +109,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const allTables = document.querySelectorAll('.table');
         allTables.forEach(function(table) {
             const numElements = table.querySelectorAll('.guest-item').length;
-            if (numElements >= perTable) {
+            if (numElements = perTable) {
                 table.style.backgroundColor = 'rgba(144, 238, 144, 0.7)';
+            } else if (numElements > perTable ) {
+                table.style.backgroundColor ='rgba(255, 128, 128, 0.7)';
             } else {
                 table.style.backgroundColor = ''; // Reset the background color if fewer than perTable elements
             }
+
         });
     }
 });

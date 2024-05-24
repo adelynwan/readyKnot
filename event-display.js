@@ -10,8 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// handling submisison of event form
+// addeventlistener sets up function that will be called whenever a specific event is delivered to target
+
 document.getElementById('event-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // prevents default submission behaviour
+
+    // retrieves form fields
 
     const eventName = document.getElementById('event-name').value;
     const eventDate = document.getElementById('event-date').value;
@@ -25,7 +30,7 @@ document.getElementById('event-form').addEventListener('submit', function(event)
         venue: eventVenue  
     };
 
-    // Store event data in localStorage
+    // Store event data in localStorage after converting into json
     localStorage.setItem('eventData', JSON.stringify(eventData));
 
     // Display success message
