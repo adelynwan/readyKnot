@@ -11,7 +11,7 @@ main {
 }
 
 header {
-    background: linear-gradient(to bottom, #d7bea8ff, rgb(246, 223, 203)); 
+    background: linear-gradient(to bottom, rgb(250, 232, 216), rgb(228, 206, 189)); 
     color: black;
     padding: 1em 0;
     text-align: center;
@@ -83,7 +83,7 @@ nav ul li a {
 }
 
 #footer {
-    background: linear-gradient(to bottom, #d7bea8ff, rgb(246, 223, 203));
+    background: linear-gradient(to bottom, rgb(250, 232, 216), rgb(228, 206, 189));
     position: fixed;
     bottom: 0px;
     width: 100%;
