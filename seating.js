@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const perTable = parseInt(perTableInput.value);
         tablesContainer.innerHTML = ''; // Clear previous tables
 
-    //  starts loop that wil run numtables over each table that needs to be created
+        //starts loop that wil run numtables over each table that needs to be created
         for (let i = 0; i < numTables; i++) {
             const table = document.createElement('div');
             // assigning css class 'table' to this element
