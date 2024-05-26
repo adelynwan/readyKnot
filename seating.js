@@ -1,16 +1,36 @@
 // make sure DOM content is fully loaded before executing the function
 document.addEventListener('DOMContentLoaded', function() {
+    // Selects the HTML element with id 'guest-list' and assigns it to the variable guestList, guest items appended here
     const guestList = document.getElementById('guest-list');
+
+    // Retrieves the item with the key 'guests' from localStorage. JSON.parse converts the JSON string back into a JavaScript object (an array)
+    // If there is no item with the key 'guests' in localStorage, it returns null (empty array)
     const guests = JSON.parse(localStorage.getItem('guests')) || [];
+
+    // Selects the HTML element with id 'create-tables' and assigns it to the variable createTablesButton.
     const createTablesButton = document.getElementById('create-tables');
+
+    // Selects the HTML element with the id 'tables-container' and assigns it to the variable tablesContainer, to hold dynamically created tables
     const tablesContainer = document.getElementById('tables-container');
+
+    // Selects the HTML element with the id 'per-table' and assigns it to the variable perTableInput.
     const perTableInput = document.getElementById('per-table');
 
     guests.forEach(guest => {
+        // creates a new item li
         const listItem = document.createElement('li');
+
+        // Sets the text content of the listItem to the name of the guest.
+        // guest.guestName refers to the guestName property of the current guest object in the loop.
         listItem.textContent = guest.guestName;
+
+        // This line adds the CSS class 'guest-item' to the listItem element.
         listItem.classList.add('guest-item');
+
+        // This line makes the listItem element draggable.
         listItem.draggable = true;
+
+        // This line appends the listItem to the guestList element (adding the list item to the list in HTML)
         guestList.appendChild(listItem);
     });
 

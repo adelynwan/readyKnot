@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // creates new table row for each guest and populates each row with guest info
     guests.forEach(guest => {
         const row = document.createElement('tr');
+        // creates multuple table cells
         row.innerHTML = `
             <td>${guest.guestName}</td>
             <td>${guest.countryCode}</td>
@@ -43,6 +44,7 @@ document.getElementById('guest-form').addEventListener('submit', function(event)
     const numPax = document.getElementById('num-pax').value;
     const guestDiet = document.getElementById('guest-diet').value;
 
+    // stores into guestdata
     const guestData = {
         guestName: guestName,
         countryCode: countryCode,

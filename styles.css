@@ -8,8 +8,10 @@ body {
 main {
     position: relative;
     padding: 20px;
-    margin-bottom: 200px; /* Add some margin to create space for the footer */
+    margin-bottom: 200px;
 }
+
+/* header items */
 
 header {
     background: linear-gradient(to bottom, rgb(250, 232, 216), rgb(228, 206, 189)); 
@@ -82,6 +84,8 @@ nav ul li a {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+/* footer */
 
 #footer {
     background: linear-gradient(to bottom, rgb(250, 232, 216), rgb(228, 206, 189));

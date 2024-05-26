@@ -1,7 +1,9 @@
+// for the event-details html
+
 document.addEventListener('DOMContentLoaded', function() {
     // Retrieve event data from localStorage
     const eventData = JSON.parse(localStorage.getItem('eventData'));
-
+    // check if eventData is avail, if yes, display event data
     if (eventData) {
         document.getElementById('display-event-name').textContent = eventData.name;
         document.getElementById('display-event-date').textContent = eventData.date;
@@ -10,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// handling submisison of event form
+// handling submisison of event form for event html
 // addeventlistener sets up function that will be called whenever a specific event is delivered to target
 
 document.getElementById('event-form').addEventListener('submit', function(event) {
@@ -23,6 +25,7 @@ document.getElementById('event-form').addEventListener('submit', function(event)
     const eventTime = document.getElementById('event-time').value;
     const eventVenue = document.getElementById('event-venue').value;
 
+    // creating object to store event data
     const eventData = {
         name: eventName,
         date: eventDate,
