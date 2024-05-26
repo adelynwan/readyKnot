@@ -1,3 +1,11 @@
+localStorage.clear(); 
+
+// Clear local storage when the page loads
+window.addEventListener('load', function() {
+    localStorage.clear(); // This will remove all items from local storage
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // retrieves table body element with guest-table id and from local storage or puts up empty array if got no existing data
     const guestTableBody = document.querySelector('#guest-table tbody');
